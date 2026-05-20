@@ -1,0 +1,1638 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LEETINDIA.COM — India's Premier AI-Powered LEET Platform 🔥</title>
+  <meta name="description"
+    content="LEETIndia is the largest diploma to B.Tech lateral entry counseling platform in India. Get AI college predictors, rank estimators, solved PYQs, syllabus guides, and cutoff analysis for JELET, AP ECET, TS ECET, DCET Karnataka, OJEE LEET, and Haryana LEET.">
+  <meta name="keywords"
+    content="LEET India, LEETIndia, India LEET platform, all india lateral entry, BTech lateral entry India, lateral entry counselling India, diploma to BTech India, AI counselling platform, lateral entry admission 2026, BTech lateral entry colleges, diploma to engineering admission, engineering lateral entry, direct second year BTech, lateral entry counselling, lateral entry entrance exam, diploma to BTech colleges, BTech admission after diploma, AICTE lateral entry rules, state wise lateral entry exams, West Bengal JELET 2026, JELET counselling, JELET rank predictor, JELET colleges, WB lateral entry admission, AP ECET 2026, AP ECET counselling, AP ECET college predictor, TS ECET 2026, TS ECET counselling, TS ECET rank predictor, DCET Karnataka, Karnataka lateral entry, Punjab LEET counselling, PTU LEET admission, Haryana LEET, HSTES LEET counselling, Kerala LET, Kerala lateral entry admission, OJEE LEET, Odisha lateral entry, OJEE counselling, Assam lateral entry engineering, diploma mechanical lateral entry, diploma computer science BTech admission, lateral entry syllabus, previous year question papers solved, engineering mock tests for diploma, hsbte leet, upsee leet, ipu cet leet, dtu lateral entry, voclet 2026, slitet leet, lateral entry placements, lateral entry fees structures, lateral entry hostel details, LEET, JELET, ECET, DCET, VOCLET, OJEE LE, AP ECET, TS ECET, Kerala LET, Polytechnic to BTech admissions, diploma to engineering lateral entry admission guidelines, state-wise lateral entry exams cutoffs, direct admission in second year engineering">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://leetindia.com/">
+
+  <!-- Favicon Icon -->
+  <link rel="icon" type="image/webp" href="favicon.webp">
+
+  <!-- Open Graph Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="LEETINDIA.COM — India's Premier AI-Powered LEET Platform 🔥">
+  <meta property="og:description"
+    content="One platform for all India LEET, lateral entry, diploma to B.Tech admissions, college prediction, AI tools, PYQs, notes, and premium counseling.">
+  <meta property="og:url" content="https://leetindia.com/">
+  <meta property="og:site_name" content="LEETINDIA">
+
+  <!-- JSON-LD Structured Schema -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  "name": "LEETINDIA.COM",
+  "url": "https://leetindia.com/",
+  "logo": "https://leetindia.com/logo.webp",
+  "description": "One platform for all India LEET, lateral entry, diploma to B.Tech admissions, college prediction, AI tools, solved PYQs, notes, counseling updates, and premium learning.",
+  "sameAs": [
+    "https://facebook.com/leetindia",
+    "https://twitter.com/leetindia",
+    "https://instagram.com/leetindia"
+  ]
+}
+</script>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&family=Bricolage+Grotesque:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <style>
+    :root {
+      --bg-primary: #f7fafc;
+      --bg-secondary: #edf2f7;
+      --bg-card: #ffffff;
+      --text-primary: #0f172a;
+      --text-secondary: #334155;
+      --text-muted: #64748b;
+      --accent1: #7c3aed;
+      /* Royal Violet */
+      --accent2: #0284c7;
+      /* Vibrant Ocean Blue */
+      --accent3: #d97706;
+      /* Warm Amber */
+      --accent4: #db2777;
+      /* Coral Rose */
+      --green: #059669;
+      /* Success Green */
+      --border: rgba(124, 58, 237, 0.08);
+      --border-hover: rgba(124, 58, 237, 0.25);
+      --shadow-sm: 0 4px 10px rgba(124, 58, 237, 0.03);
+      --shadow-md: 0 16px 36px -12px rgba(124, 58, 237, 0.08), 0 4px 12px rgba(0, 0, 0, 0.02);
+      --shadow-lg: 0 24px 50px -18px rgba(124, 58, 237, 0.15), 0 8px 24px rgba(124, 58, 237, 0.04);
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      font-family: 'Bricolage Grotesque', sans-serif;
+      min-height: 100vh;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    /* ---- NOISE OVERLAY ---- */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 9999;
+      opacity: 0.7;
+    }
+
+    /* ---- MESH BG (Bright Theme) ---- */
+    .mesh-bg {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+      overflow: hidden;
+    }
+
+    .mesh-bg::before {
+      content: '';
+      position: absolute;
+      width: 900px;
+      height: 900px;
+      background: radial-gradient(circle, rgba(124, 58, 237, 0.08) 0%, transparent 70%);
+      top: -300px;
+      left: -250px;
+      animation: float1 15s ease-in-out infinite;
+    }
+
+    .mesh-bg::after {
+      content: '';
+      position: absolute;
+      width: 800px;
+      height: 800px;
+      background: radial-gradient(circle, rgba(2, 132, 199, 0.06) 0%, transparent 70%);
+      bottom: -200px;
+      right: -200px;
+      animation: float2 20s ease-in-out infinite;
+    }
+
+    .orb3 {
+      position: absolute;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(219, 39, 119, 0.04) 0%, transparent 70%);
+      top: 40%;
+      left: 40%;
+      transform: translate(-50%, -50%);
+      animation: float3 12s ease-in-out infinite;
+    }
+
+    @keyframes float1 {
+
+      0%,
+      100% {
+        transform: translate(0, 0)
+      }
+
+      50% {
+        transform: translate(60px, 50px)
+      }
+    }
+
+    @keyframes float2 {
+
+      0%,
+      100% {
+        transform: translate(0, 0)
+      }
+
+      50% {
+        transform: translate(-50px, -60px)
+      }
+    }
+
+    @keyframes float3 {
+
+      0%,
+      100% {
+        transform: translate(-50%, -50%) scale(1)
+      }
+
+      50% {
+        transform: translate(-50%, -50%) scale(1.08)
+      }
+    }
+
+    /* ---- MARQUEE ---- */
+    .marquee-wrap {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(90deg, var(--accent1), var(--accent2), var(--accent4), var(--accent1));
+      background-size: 200% auto;
+      animation: shimmer 4s linear infinite;
+      overflow: hidden;
+      white-space: nowrap;
+      z-index: 100;
+      padding: 8px 0;
+      box-shadow: 0 2px 10px rgba(124, 58, 237, 0.1);
+    }
+
+    .marquee-inner {
+      display: inline-block;
+      animation: marquee 28s linear infinite;
+      font-family: 'Space Mono', monospace;
+      font-size: 11px;
+      font-weight: 700;
+      color: white;
+      letter-spacing: 0.06em;
+    }
+
+    @keyframes shimmer {
+      to {
+        background-position: 200% center;
+      }
+    }
+
+    @keyframes marquee {
+      from {
+        transform: translateX(0);
+      }
+
+      to {
+        transform: translateX(-50%);
+      }
+    }
+
+    /* ---- MAIN LAYOUT ---- */
+    .container {
+      position: relative;
+      z-index: 1;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 100px 24px 60px;
+    }
+
+    /* ---- NAV BAR ---- */
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 50px;
+      background: rgba(255, 255, 255, 0.75);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.6);
+      padding: 16px 36px;
+      border-radius: 50px;
+      box-shadow: var(--shadow-sm);
+      animation: fadeDown 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      transition: transform 0.2s;
+    }
+
+    .logo-container:hover {
+      transform: scale(1.04);
+    }
+
+    .logo-img {
+      height: 70px;
+      /* Big Size Logo */
+      width: auto;
+      object-fit: contain;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(124, 58, 237, 0.12);
+      transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    .logo-container:hover .logo-img {
+      transform: rotate(2deg) scale(1.05);
+    }
+
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .nav-menu-item {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--text-secondary);
+      text-decoration: none;
+      transition: color 0.2s;
+      font-family: 'Bricolage Grotesque', sans-serif;
+      position: relative;
+      cursor: pointer;
+    }
+
+    .nav-menu-item:hover {
+      color: var(--accent1);
+    }
+
+    .nav-menu-item::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--accent1);
+      transition: width 0.2s;
+    }
+
+    .nav-menu-item:hover::after {
+      width: 100%;
+    }
+
+    .nav-menu-item.premium {
+      color: var(--accent4);
+      background: rgba(219, 39, 119, 0.06);
+      padding: 4px 12px;
+      border-radius: 12px;
+    }
+
+    .nav-menu-item.premium:hover {
+      background: rgba(219, 39, 119, 0.12);
+    }
+
+    .nav-menu-item.premium::after {
+      display: none;
+    }
+
+    .nav-email {
+      font-size: 13px;
+      color: var(--text-secondary);
+      font-family: 'Space Mono', monospace;
+      text-decoration: none;
+      border: 1px solid rgba(124, 58, 237, 0.18);
+      background: #ffffff;
+      padding: 8px 20px;
+      border-radius: 50px;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      font-weight: 700;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
+    }
+
+    .nav-email:hover {
+      color: var(--accent1);
+      border-color: var(--accent1);
+      background: rgba(124, 58, 237, 0.04);
+      box-shadow: 0 4px 12px rgba(124, 58, 237, 0.08);
+    }
+
+    /* ---- HERO ---- */
+    .hero {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    /* Big glowing hero logo */
+    .hero-brand-display {
+      margin-bottom: 24px;
+      display: flex;
+      justify-content: center;
+      animation: fadeUp 0.8s 0.05s cubic-bezier(0.16, 1, 0.3, 1) both;
+    }
+
+    .hero-logo-large {
+      height: 130px;
+      /* Large display logo */
+      width: auto;
+      object-fit: contain;
+      border-radius: 20px;
+      box-shadow: 0 15px 40px rgba(124, 58, 237, 0.18);
+      transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .hero-logo-large:hover {
+      transform: scale(1.05) rotate(-1deg);
+      box-shadow: 0 20px 50px rgba(124, 58, 237, 0.28);
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(124, 58, 237, 0.06);
+      border: 1px solid rgba(124, 58, 237, 0.15);
+      padding: 8px 20px;
+      border-radius: 30px;
+      font-size: 12px;
+      font-family: 'Space Mono', monospace;
+      color: var(--accent1);
+      margin-bottom: 24px;
+      animation: fadeUp 0.8s 0.1s cubic-bezier(0.16, 1, 0.3, 1) both;
+      letter-spacing: 0.05em;
+      font-weight: 700;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .dot-live {
+      width: 8px;
+      height: 8px;
+      background: var(--green);
+      border-radius: 50%;
+      animation: blink 1.2s ease infinite;
+      box-shadow: 0 0 8px var(--green);
+    }
+
+    @keyframes blink {
+
+      0%,
+      100% {
+        opacity: 1
+      }
+
+      50% {
+        opacity: 0.3
+      }
+    }
+
+    .hero h1 {
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: clamp(38px, 6vw, 72px);
+      line-height: 1.05;
+      letter-spacing: -2px;
+      margin-bottom: 18px;
+      animation: fadeUp 0.8s 0.2s cubic-bezier(0.16, 1, 0.3, 1) both;
+    }
+
+    .hero h1 .line1 {
+      display: block;
+      color: var(--text-primary);
+    }
+
+    .hero h1 .line2 {
+      display: inline-block;
+      background: linear-gradient(135deg, var(--accent1) 0%, var(--accent2) 50%, var(--accent4) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .hero-sub {
+      font-size: clamp(15px, 2vw, 19px);
+      color: var(--text-secondary);
+      max-width: 840px;
+      margin: 20px auto 36px;
+      line-height: 1.7;
+      animation: fadeUp 0.8s 0.3s cubic-bezier(0.16, 1, 0.3, 1) both;
+      font-weight: 400;
+    }
+
+    .hero-sub strong {
+      color: var(--accent1);
+      font-weight: 700;
+    }
+
+    /* OVERVIEW BOX */
+    .overview-badge-panel {
+      max-width: 840px;
+      margin: -10px auto 36px;
+      background: rgba(255, 255, 255, 0.85);
+      border: 1px solid rgba(124, 58, 237, 0.08);
+      border-radius: 20px;
+      padding: 20px 28px;
+      box-shadow: var(--shadow-md);
+      font-size: 14.5px;
+      line-height: 1.65;
+      color: var(--text-secondary);
+      animation: fadeUp 0.8s 0.35s cubic-bezier(0.16, 1, 0.3, 1) both;
+    }
+
+    .overview-badge-panel strong {
+      color: var(--accent1);
+    }
+
+    /* ---- CTA BUTTONS ---- */
+    .cta-group {
+      display: flex;
+      gap: 14px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 50px;
+      animation: fadeUp 0.8s 0.4s cubic-bezier(0.16, 1, 0.3, 1) both;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--accent1), var(--accent2));
+      color: white;
+      font-weight: 700;
+      font-size: 15px;
+      padding: 15px 36px;
+      border-radius: 50px;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      box-shadow: 0 10px 25px rgba(124, 58, 237, 0.2);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 15px 35px rgba(124, 58, 237, 0.35);
+    }
+
+    .btn-secondary {
+      background: #ffffff;
+      color: var(--text-primary);
+      font-weight: 700;
+      font-size: 15px;
+      padding: 15px 32px;
+      border-radius: 50px;
+      border: 1px solid rgba(124, 58, 237, 0.18);
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--accent1);
+      color: var(--accent1);
+      background: rgba(124, 58, 237, 0.03);
+      transform: translateY(-2px);
+      box-shadow: 0 10px 20px rgba(124, 58, 237, 0.05);
+    }
+
+    /* ---- COUNTDOWN ---- */
+    .countdown-container-title {
+      text-align: center;
+      font-family: 'Space Mono', monospace;
+      font-size: 12px;
+      letter-spacing: 0.1em;
+      color: var(--accent4);
+      font-weight: 700;
+      margin-bottom: 12px;
+      animation: fadeUp 0.8s 0.42s cubic-bezier(0.16, 1, 0.3, 1) both;
+    }
+
+    .countdown-wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 60px;
+      flex-wrap: wrap;
+      animation: fadeUp 0.8s 0.45s cubic-bezier(0.16, 1, 0.3, 1) both;
+    }
+
+    .count-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 16px 22px;
+      text-align: center;
+      min-width: 86px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+    }
+
+    .count-box::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(124, 58, 237, 0.03), transparent);
+      pointer-events: none;
+    }
+
+    .count-num {
+      font-family: 'Syne', sans-serif;
+      font-size: 38px;
+      font-weight: 800;
+      color: var(--text-primary);
+      letter-spacing: -1.5px;
+      line-height: 1;
+      display: block;
+      background: linear-gradient(135deg, var(--accent1), var(--accent2));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .count-label {
+      font-size: 10px;
+      color: var(--text-muted);
+      font-family: 'Space Mono', monospace;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-top: 6px;
+      display: block;
+      font-weight: 700;
+    }
+
+    .count-sep {
+      font-family: 'Syne', sans-serif;
+      font-size: 32px;
+      font-weight: 800;
+      color: var(--accent1);
+      align-self: center;
+      opacity: 0.4;
+      animation: blink-sep 1.5s ease infinite;
+    }
+
+    @keyframes blink-sep {
+
+      0%,
+      100% {
+        opacity: 0.3
+      }
+
+      50% {
+        opacity: 0.9
+      }
+    }
+
+    /* ---- METRICS ---- */
+    .stats-row {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      margin-bottom: 70px;
+      background: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(8px);
+      border: 1px solid var(--border);
+      padding: 24px 40px;
+      border-radius: 28px;
+      box-shadow: var(--shadow-sm);
+      animation: fadeUp 0.8s 0.5s cubic-bezier(0.16, 1, 0.3, 1) both;
+    }
+
+    .stat {
+      text-align: center;
+    }
+
+    .stat-num {
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: 40px;
+      background: linear-gradient(135deg, var(--accent1), var(--accent2));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      line-height: 1;
+    }
+
+    .stat-label {
+      font-size: 12px;
+      color: var(--text-secondary);
+      font-family: 'Space Mono', monospace;
+      letter-spacing: 0.05em;
+      margin-top: 6px;
+      font-weight: 700;
+    }
+
+    .stat-div {
+      width: 1px;
+      height: 44px;
+      background: rgba(124, 58, 237, 0.15);
+      align-self: center;
+    }
+
+    .scroll-hint {
+      text-align: center;
+      margin-bottom: 80px;
+      animation: fadeUp 0.8s 0.55s cubic-bezier(0.16, 1, 0.3, 1) both;
+    }
+
+    .scroll-hint span {
+      font-size: 12px;
+      font-family: 'Space Mono', monospace;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .scroll-arrow {
+      display: inline-block;
+      animation: bounce 1.5s ease infinite;
+      color: var(--accent1);
+      font-weight: 700;
+    }
+
+    @keyframes bounce {
+
+      0%,
+      100% {
+        transform: translateY(0)
+      }
+
+      50% {
+        transform: translateY(4px)
+      }
+    }
+
+    /* ---- SECTION HEADINGS ---- */
+    .section-label {
+      font-family: 'Space Mono', monospace;
+      font-size: 12px;
+      letter-spacing: 0.12em;
+      color: var(--accent1);
+      text-transform: uppercase;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 700;
+    }
+
+    .section-label::after {
+      content: '';
+      height: 1px;
+      flex: 1;
+      background: linear-gradient(90deg, rgba(124, 58, 237, 0.2), transparent);
+    }
+
+    .section-title {
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: clamp(28px, 4vw, 40px);
+      letter-spacing: -1.2px;
+      margin-bottom: 14px;
+      line-height: 1.1;
+      color: var(--text-primary);
+    }
+
+    .section-desc {
+      color: var(--text-secondary);
+      font-size: 16px;
+      max-width: 650px;
+      line-height: 1.7;
+      margin-bottom: 40px;
+    }
+
+    /* ---- INTERACTIVE FEATURE MATRIX SHOWCASE ---- */
+    .features-section {
+      margin-bottom: 80px;
+      animation: fadeUp 0.8s 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 20px;
+    }
+
+    .feat-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 30px;
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+      position: relative;
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .feat-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--accent1), var(--accent2));
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .feat-card:hover {
+      transform: translateY(-5px);
+      border-color: var(--border-hover);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .feat-card:hover::before {
+      opacity: 1;
+    }
+
+    .feat-header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+
+    .feat-icon-box {
+      width: 46px;
+      height: 46px;
+      border-radius: 14px;
+      background: rgba(124, 58, 237, 0.05);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      color: var(--accent1);
+      transition: background 0.3s, transform 0.3s;
+    }
+
+    .feat-card:hover .feat-icon-box {
+      background: rgba(124, 58, 237, 0.1);
+      transform: scale(1.08);
+    }
+
+    .feat-title {
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: 18px;
+      color: var(--text-primary);
+      letter-spacing: -0.3px;
+    }
+
+    .feat-desc {
+      color: var(--text-secondary);
+      font-size: 14px;
+      line-height: 1.65;
+      margin-bottom: 20px;
+      flex-grow: 1;
+    }
+
+    .feat-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-bottom: 18px;
+      border-top: 1px solid rgba(124, 58, 237, 0.06);
+      padding-top: 16px;
+    }
+
+    .feat-list-item {
+      font-size: 13px;
+      color: var(--text-secondary);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .feat-list-item::before {
+      content: '✦';
+      color: var(--accent2);
+      font-size: 11px;
+      font-weight: 700;
+    }
+
+    .feat-list-item strong {
+      color: var(--text-primary);
+    }
+
+    .feat-routes {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: auto;
+    }
+
+    .route-pill {
+      font-family: 'Space Mono', monospace;
+      font-size: 11px;
+      background: rgba(2, 132, 199, 0.05);
+      color: var(--accent2);
+      padding: 3px 10px;
+      border-radius: 20px;
+      font-weight: 700;
+      border: 1px solid rgba(2, 132, 199, 0.08);
+    }
+
+    .route-pill.premium-pill {
+      background: rgba(219, 39, 119, 0.05);
+      color: var(--accent4);
+      border-color: rgba(219, 39, 119, 0.08);
+    }
+
+    /* ---- STATE COVERAGE SECTION ---- */
+    .states-section {
+      margin-bottom: 80px;
+      animation: fadeUp 0.8s 0.65s cubic-bezier(0.16, 1, 0.3, 1) both;
+    }
+
+    .tabs {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 30px;
+      flex-wrap: wrap;
+      background: rgba(255, 255, 255, 0.6);
+      padding: 6px;
+      border-radius: 40px;
+      border: 1px solid var(--border);
+      max-width: fit-content;
+    }
+
+    .tab-btn {
+      padding: 10px 24px;
+      border-radius: 30px;
+      font-size: 14px;
+      font-weight: 700;
+      border: none;
+      background: transparent;
+      color: var(--text-muted);
+      cursor: pointer;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      font-family: 'Bricolage Grotesque', sans-serif;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .tab-btn.active,
+    .tab-btn:hover {
+      background: #ffffff;
+      color: var(--accent1);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .states-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 12px;
+    }
+
+    .state-chip {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 14px 18px;
+      font-size: 14px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      cursor: default;
+      position: relative;
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .state-chip::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, var(--accent1), var(--accent2));
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .state-chip:hover::before {
+      opacity: 0.05;
+    }
+
+    .state-chip:hover {
+      border-color: var(--accent1);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .state-chip .flag {
+      font-size: 20px;
+      position: relative;
+      z-index: 1;
+      transition: transform 0.2s;
+    }
+
+    .state-chip:hover .flag {
+      transform: scale(1.15) rotate(-5deg);
+    }
+
+    .state-chip .name {
+      position: relative;
+      z-index: 1;
+      color: var(--text-primary);
+    }
+
+    .state-chip.ut {
+      border-color: rgba(2, 132, 199, 0.15);
+    }
+
+    .state-chip.ut:hover {
+      border-color: var(--accent2);
+    }
+
+    /* ---- CONTACT CARD (NO EARLY ACCESS FORM, BEAUTIFUL DESIGN) ---- */
+    .notify-section {
+      background: linear-gradient(135deg, #ffffff 0%, rgba(124, 58, 237, 0.04) 100%);
+      border: 1px solid var(--border);
+      border-radius: 32px;
+      padding: 50px 40px;
+      text-align: center;
+      margin-bottom: 70px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+      animation: fadeUp 0.8s 0.75s cubic-bezier(0.16, 1, 0.3, 1) both;
+    }
+
+    .notify-section::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(124, 58, 237, 0.06) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .notify-section h2 {
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: clamp(24px, 4vw, 36px);
+      letter-spacing: -1px;
+      margin-bottom: 12px;
+      color: var(--text-primary);
+    }
+
+    .notify-section p {
+      color: var(--text-secondary);
+      margin-bottom: 24px;
+      font-size: 16px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .notify-contact-btn {
+      background: linear-gradient(135deg, var(--accent1), var(--accent2));
+      color: white;
+      border: none;
+      padding: 16px 36px;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 15px;
+      cursor: pointer;
+      font-family: 'Bricolage Grotesque', sans-serif;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      box-shadow: 0 4px 15px rgba(124, 58, 237, 0.2);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+    }
+
+    .notify-contact-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(124, 58, 237, 0.35);
+    }
+
+    /* ---- FOOTER ---- */
+    .footer {
+      border-top: 1px solid rgba(124, 58, 237, 0.1);
+      padding-top: 36px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      animation: fadeUp 0.8s 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
+    }
+
+    .footer-left {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.8;
+    }
+
+    .footer-left strong {
+      color: var(--text-primary);
+      font-family: 'Syne', sans-serif;
+      font-size: 16px;
+    }
+
+    .footer-right {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .footer-link {
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 13px;
+      font-family: 'Space Mono', monospace;
+      transition: color 0.2s;
+      font-weight: 700;
+    }
+
+    .footer-link:hover {
+      color: var(--accent1);
+    }
+
+    /* ---- ANIMATIONS ---- */
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 980px) {
+      .nav-menu {
+        display: none;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 80px 16px 40px;
+      }
+
+      .nav {
+        padding: 8px 20px;
+        margin-bottom: 30px;
+      }
+
+      .logo-img {
+        height: 48px;
+      }
+
+      /* Slightly smaller for mobile */
+      .hero-logo-large {
+        height: 100px;
+      }
+
+      .stats-row {
+        gap: 16px;
+        padding: 20px;
+      }
+
+      .stat-div {
+        display: none;
+      }
+
+      .notify-section {
+        padding: 40px 20px;
+      }
+
+      .footer {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+    .at-sign {
+      font-family: 'Bricolage Grotesque', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-weight: inherit;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- MARQUEE -->
+  <div class="marquee-wrap">
+    <div class="marquee-inner">
+      🚀 LEETINDIA.COM — INDIA'S PREMIER ALL-STATE LEET PLATFORM &nbsp;•&nbsp; 🏛️ 28 STATES + 8 UTs COVERED
+      &nbsp;•&nbsp; 🤖 AI-POWERED COUNSELLING PREDICTORS &nbsp;•&nbsp; 📚 SOLVED PYQs & NOTES &nbsp;•&nbsp;
+      btechleet<span class="at-sign">&#64;</span>gmail.com &nbsp;•&nbsp; 🚀 LEETINDIA.COM — INDIA'S PREMIER ALL-STATE LEET PLATFORM &nbsp;•&nbsp; 🏛️
+      28 STATES + 8 UTs COVERED &nbsp;•&nbsp; 🤖 AI-POWERED COUNSELLING PREDICTORS &nbsp;•&nbsp; 📚 SOLVED PYQs & NOTES
+      &nbsp;•&nbsp; btechleet<span class="at-sign">&#64;</span>gmail.com &nbsp;•&nbsp;
+    </div>
+  </div>
+
+  <!-- MESH BG -->
+  <div class="mesh-bg">
+    <div class="orb3"></div>
+  </div>
+
+  <div class="container">
+
+    <!-- NAV -->
+    <nav class="nav">
+      <a href="#" class="logo-container">
+        <img src="logo.webp" alt="LEETINDIA.COM Logo" class="logo-img">
+      </a>
+      <div class="nav-menu">
+        <a href="#" class="nav-menu-item">Home</a>
+        <a href="#states" class="nav-menu-item">States & UTs</a>
+        <a href="#features" class="nav-menu-item">Exams</a>
+        <a href="#features" class="nav-menu-item">Colleges</a>
+        <a href="#features" class="nav-menu-item">Predictors</a>
+        <a href="#features" class="nav-menu-item">AI Tools</a>
+        <a href="#features" class="nav-menu-item premium">Premium</a>
+      </div>
+      <a href="mailto:btechleet@gmail.com" class="nav-email">btechleet<span class="at-sign">@</span>gmail.com</a>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero">
+
+      <div class="eyebrow">
+        <span class="dot-live"></span>
+        🔥 ALL INDIA LEET PLATFORM
+      </div>
+      <h1>
+        <span class="line1">One Platform. Every State.</span>
+        <span class="line2">LEETINDIA.COM</span>
+      </h1>
+      <p class="hero-sub">
+        A full stack <strong>AI-powered educational SaaS platform</strong> specially designed for lateral entry (LEET)
+        students across India. Get instant access to resources, predictions, and smart tools.
+      </p>
+
+      <!-- PROJECT OVERVIEW BOX -->
+      <div class="overview-badge-panel">
+        <strong>PROJECT OVERVIEW:</strong> LEETINDIA.COM is built to streamline the lateral entry pipeline. From diploma
+        to B.Tech admissions, we unify 28 States and 8 Union Territories under a single, highly optimized AI-driven
+        platform.
+      </div>
+
+      <div class="cta-group">
+        <a href="mailto:btechleet&#64;gmail.com" class="btn-primary">
+          📬 Get In Touch / Ask Us
+        </a>
+        <a href="#features" class="btn-secondary">
+          ⚡ Explore AI Features
+        </a>
+      </div>
+    </header>
+
+    <!-- COUNTDOWN -->
+    <div class="countdown-container-title">LAUNCH COUNTDOWN • TARGET: AUGUST 3, 2026</div>
+    <div class="countdown-wrap">
+      <div class="count-box">
+        <span class="count-num" id="d">00</span>
+        <span class="count-label">Days</span>
+      </div>
+      <span class="count-sep">:</span>
+      <div class="count-box">
+        <span class="count-num" id="h">00</span>
+        <span class="count-label">Hours</span>
+      </div>
+      <span class="count-sep">:</span>
+      <div class="count-box">
+        <span class="count-num" id="m">00</span>
+        <span class="count-label">Mins</span>
+      </div>
+      <span class="count-sep">:</span>
+      <div class="count-box">
+        <span class="count-num" id="s">00</span>
+        <span class="count-label">Secs</span>
+      </div>
+    </div>
+
+    <!-- STATS -->
+    <div class="stats-row">
+      <div class="stat">
+        <div class="stat-num">28</div>
+        <div class="stat-label">States Covered</div>
+      </div>
+      <div class="stat-div"></div>
+      <div class="stat">
+        <div class="stat-num">8</div>
+        <div class="stat-label">Union Territories</div>
+      </div>
+      <div class="stat-div"></div>
+      <div class="stat">
+        <div class="stat-num">100%</div>
+        <div class="stat-label">Lateral Entry Exams</div>
+      </div>
+      <div class="stat-div"></div>
+      <div class="stat">
+        <div class="stat-num">AI</div>
+        <div class="stat-label">Counseling Suite</div>
+      </div>
+    </div>
+
+    <div class="scroll-hint">
+      <span>Discover the ultimate B.Tech LEET ecosystem <span class="scroll-arrow">↓</span></span>
+    </div>
+
+    <!-- FEATURES SHOWCASE MATRIX -->
+    <section class="features-section" id="features">
+      <div class="section-label">SaaS Feature Matrix</div>
+      <h2 class="section-title">Everything a Lateral Entry Student Needs ⚡</h2>
+      <p class="section-desc">We solved the scattered admissions problem. Here is an overview of what makes
+        LEETINDIA.COM the largest vertical SaaS educational suite.</p>
+
+      <div class="features-grid">
+        <!-- STATES & UTS CARD -->
+        <div class="feat-card">
+          <div>
+            <div class="feat-header">
+              <div class="feat-icon-box">🗺️</div>
+              <h3 class="feat-title">States & UTs Hub</h3>
+            </div>
+            <p class="feat-desc">End-to-end mapping of lateral entry pathways for all Indian territories. Get accurate
+              updates, localized cutoffs, and counseling cycles.</p>
+            <ul class="feat-list">
+              <li class="feat-list-item"><strong>State-wise LEET Exams</strong> and top colleges</li>
+              <li class="feat-list-item"><strong>Cutoffs & counseling updates</strong> dynamically fetched</li>
+              <li class="feat-list-item"><strong>Eligibility criteria</strong> validation calculator</li>
+            </ul>
+          </div>
+          <div class="feat-routes">
+            <span class="route-pill">/state/haryana</span>
+            <span class="route-pill">/state/punjab</span>
+            <span class="route-pill">/state/up</span>
+          </div>
+        </div>
+
+        <!-- EXAMS SECTION -->
+        <div class="feat-card">
+          <div>
+            <div class="feat-header">
+              <div class="feat-icon-box">📝</div>
+              <h3 class="feat-title">Comprehensive Exams Hub</h3>
+            </div>
+            <p class="feat-desc">Exhaustive guides and updates for major engineering lateral entrance exams. Access
+              detailed syllabus mappings and timeline milestones.</p>
+            <ul class="feat-list">
+              <li class="feat-list-item"><strong>Exam overviews</strong> & registration notifications</li>
+              <li class="feat-list-item"><strong>Syllabus breakdowns</strong> with micro-topics</li>
+              <li class="feat-list-item"><strong>PYQs and mock test integration</strong></li>
+            </ul>
+          </div>
+          <div class="feat-routes">
+            <span class="route-pill">/exam/haryana-leet</span>
+            <span class="route-pill">/exam/jelet</span>
+            <span class="route-pill">/exam/ap-ecet</span>
+          </div>
+        </div>
+
+        <!-- COLLEGES SECTION -->
+        <div class="feat-card">
+          <div>
+            <div class="feat-header">
+              <div class="feat-icon-box">🏫</div>
+              <h3 class="feat-title">Colleges & Cutoffs</h3>
+            </div>
+            <p class="feat-desc">Unpack target colleges accepting lateral entries. Explore branches, fee frameworks,
+              infrastructure facilities, and reliable review boards.</p>
+            <ul class="feat-list">
+              <li class="feat-list-item"><strong>Detailed overview</strong>, fees, and hostel information</li>
+              <li class="feat-list-item"><strong>Verified placements</strong> records and cutoff stats</li>
+              <li class="feat-list-item"><strong>Interactive gallery</strong> & student review ratings</li>
+            </ul>
+          </div>
+          <div class="feat-routes">
+            <span class="route-pill">/college/dcrust</span>
+            <span class="route-pill">/college/ymca</span>
+          </div>
+        </div>
+
+        <!-- PREDICTORS SECTION -->
+        <div class="feat-card">
+          <div>
+            <div class="feat-header">
+              <div class="feat-icon-box">🔮</div>
+              <h3 class="feat-title">Intelligent Predictors</h3>
+            </div>
+            <p class="feat-desc">Take the guesswork out of counseling. Our custom ML modeling calculates your entry
+              possibilities based on historical trends.</p>
+            <ul class="feat-list">
+              <li class="feat-list-item"><strong>College Predictor:</strong> Match by rank and reservation category</li>
+              <li class="feat-list-item"><strong>Rank Predictor:</strong> Estimate rank from your marks</li>
+              <li class="feat-list-item"><strong>Branch Predictor:</strong> Suggest safe branches & safe choices</li>
+            </ul>
+          </div>
+          <div class="feat-routes">
+            <span class="route-pill">College Predictor</span>
+            <span class="route-pill">Rank Predictor</span>
+          </div>
+        </div>
+
+        <!-- AI TOOLS SECTION -->
+        <div class="feat-card">
+          <div>
+            <div class="feat-header">
+              <div class="feat-icon-box">🤖</div>
+              <h3 class="feat-title">AI Support Suite</h3>
+            </div>
+            <p class="feat-desc">Advanced generative artificial intelligence tailored specifically for admissions
+              support. Read PDFs, solve complex formulas, and structure study plans.</p>
+            <ul class="feat-list">
+              <li class="feat-list-item"><strong>AI Chatbot:</strong> Answers counseling questions in real-time</li>
+              <li class="feat-list-item"><strong>AI PDF Analyzer:</strong> Extract important dates from brochures</li>
+              <li class="feat-list-item"><strong>AI PYQ Solver:</strong> Solve problems directly from uploaded images
+              </li>
+              <li class="feat-list-item"><strong>AI Roadmap Generator:</strong> Tailored student study planners</li>
+            </ul>
+          </div>
+          <div class="feat-routes">
+            <span class="route-pill premium-pill">AI Tools</span>
+            <span class="route-pill premium-pill">OCR PYQ Solver</span>
+          </div>
+        </div>
+
+        <!-- PREMIUM SYSTEM -->
+        <div class="feat-card">
+          <div>
+            <div class="feat-header">
+              <div class="feat-icon-box">💎</div>
+              <h3 class="feat-title">Premium Experience</h3>
+            </div>
+            <p class="feat-desc">Supercharge your studies and admissions strategy with unlimited tools, comprehensive
+              predictors, and fully optimized notes.</p>
+            <ul class="feat-list">
+              <li class="feat-list-item"><strong>Zero Ads</strong> with high-speed material downloads</li>
+              <li class="feat-list-item"><strong>Unlimited AI power</strong> & advanced counseling predictions</li>
+              <li class="feat-list-item"><strong>Integrated Payment:</strong> Stripe & Razorpay workflows</li>
+            </ul>
+          </div>
+          <div class="feat-routes">
+            <span class="route-pill premium-pill">Premium Notes</span>
+            <span class="route-pill premium-pill">Mock Tests</span>
+          </div>
+        </div>
+
+        <!-- STUDENT WORKSPACE / DASHBOARD CARD (STUDENT CENTRIC) -->
+        <div class="feat-card">
+          <div>
+            <div class="feat-header">
+              <div class="feat-icon-box">🎓</div>
+              <h3 class="feat-title">Student Dashboard Tracker</h3>
+            </div>
+            <p class="feat-desc">Your personal command center to track and organize your complete lateral entry journey.
+              Save files, log predictions, and track cutoffs instantly.</p>
+            <ul class="feat-list">
+              <li class="feat-list-item"><strong>Saved Colleges & Exams:</strong> Keep tabs on application deadlines
+              </li>
+              <li class="feat-list-item"><strong>AI Counseling Log:</strong> Review your conversation and roadmap
+                histories</li>
+              <li class="feat-list-item"><strong>Scorecard Analytics:</strong> Predict your rank trends over time</li>
+            </ul>
+          </div>
+          <div class="feat-routes">
+            <span class="route-pill">Student Dash</span>
+            <span class="route-pill">Saved Predictions</span>
+          </div>
+        </div>
+
+        <!-- RESOURCES SECTION -->
+        <div class="feat-card">
+          <div>
+            <div class="feat-header">
+              <div class="feat-icon-box">📚</div>
+              <h3 class="feat-title">Resources & Search</h3>
+            </div>
+            <p class="feat-desc">A highly indexed digital library filled with chapter-wise notes, full formula sheets,
+              recommended books, mock exams, and video lectures.</p>
+            <ul class="feat-list">
+              <li class="feat-list-item"><strong>Multi-filter Search:</strong> Branch, semester, state, subject</li>
+              <li class="feat-list-item"><strong>Syllabus Mapped:</strong> Built for your specific university</li>
+              <li class="feat-list-item"><strong>Structured Guides:</strong> Formula sheets and quick review notes</li>
+            </ul>
+          </div>
+          <div class="feat-routes">
+            <span class="route-pill">Notes</span>
+            <span class="route-pill">Formula Sheets</span>
+          </div>
+        </div>
+
+        <!-- FUTURE HIGHLIGHTS -->
+        <div class="feat-card">
+          <div>
+            <div class="feat-header">
+              <div class="feat-icon-box">🚀</div>
+              <h3 class="feat-title">Future Expansion</h3>
+            </div>
+            <p class="feat-desc">LEETINDIA.COM is continually building. Explore upcoming tools designed to make your
+              B.Tech journey smoother and highly collaborative.</p>
+            <ul class="feat-list">
+              <li class="feat-list-item"><strong>Mobile Application:</strong> Responsive learning on the go</li>
+              <li class="feat-list-item"><strong>Discussion Forum</strong> & Peer Mentorship circles</li>
+              <li class="feat-list-item"><strong>Scholarship & Internship Finder</strong> customized for diploma</li>
+            </ul>
+          </div>
+          <div class="feat-routes">
+            <span class="route-pill">Mentorship</span>
+            <span class="route-pill">Forum</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TABBED COVERAGE SECTION -->
+    <section class="states-section" id="states">
+      <div class="section-label">State Coverage Map</div>
+      <h2 class="section-title">All-India Admissions Mapping 🏛️</h2>
+      <p class="section-desc">Whether you belong to Haryana, West Bengal, or Kerala, LEETINDIA.COM maps your entry paths
+        perfectly.</p>
+
+      <div class="tabs">
+        <button class="tab-btn active" onclick="showTab('states28', this)">🏛️ 28 Indian States</button>
+        <button class="tab-btn" onclick="showTab('uts8', this)">🏙️ 8 Union Territories</button>
+      </div>
+
+      <!-- 28 STATES -->
+      <div id="states28" class="states-grid">
+        <div class="state-chip"><span class="flag">🌾</span><span class="name">Haryana</span></div>
+        <div class="state-chip"><span class="flag">🏔️</span><span class="name">Himachal Pradesh</span></div>
+        <div class="state-chip"><span class="flag">🌊</span><span class="name">Andhra Pradesh</span></div>
+        <div class="state-chip"><span class="flag">🏔️</span><span class="name">Arunachal Pradesh</span></div>
+        <div class="state-chip"><span class="flag">🫖</span><span class="name">Assam</span></div>
+        <div class="state-chip"><span class="flag">🍵</span><span class="name">Bihar</span></div>
+        <div class="state-chip"><span class="flag">🌲</span><span class="name">Chhattisgarh</span></div>
+        <div class="state-chip"><span class="flag">🏖️</span><span class="name">Goa</span></div>
+        <div class="state-chip"><span class="flag">🎨</span><span class="name">Gujarat</span></div>
+        <div class="state-chip"><span class="flag">🌾</span><span class="name">Jharkhand</span></div>
+        <div class="state-chip"><span class="flag">🌴</span><span class="name">Karnataka</span></div>
+        <div class="state-chip"><span class="flag">🌴</span><span class="name">Kerala</span></div>
+        <div class="state-chip"><span class="flag">🌳</span><span class="name">Madhya Pradesh</span></div>
+        <div class="state-chip"><span class="flag">🏙️</span><span class="name">Maharashtra</span></div>
+        <div class="state-chip"><span class="flag">🏔️</span><span class="name">Manipur</span></div>
+        <div class="state-chip"><span class="flag">🌿</span><span class="name">Meghalaya</span></div>
+        <div class="state-chip"><span class="flag">🌿</span><span class="name">Mizoram</span></div>
+        <div class="state-chip"><span class="flag">🌄</span><span class="name">Nagaland</span></div>
+        <div class="state-chip"><span class="flag">🌊</span><span class="name">Odisha</span></div>
+        <div class="state-chip"><span class="flag">🌾</span><span class="name">Punjab</span></div>
+        <div class="state-chip"><span class="flag">🏜️</span><span class="name">Rajasthan</span></div>
+        <div class="state-chip"><span class="flag">🌿</span><span class="name">Sikkim</span></div>
+        <div class="state-chip"><span class="flag">🌊</span><span class="name">Tamil Nadu</span></div>
+        <div class="state-chip"><span class="flag">🌿</span><span class="name">Telangana</span></div>
+        <div class="state-chip"><span class="flag">🏔️</span><span class="name">Tripura</span></div>
+        <div class="state-chip"><span class="flag">🕌</span><span class="name">Uttar Pradesh</span></div>
+        <div class="state-chip"><span class="flag">🏔️</span><span class="name">Uttarakhand</span></div>
+        <div class="state-chip"><span class="flag">🐟</span><span class="name">West Bengal</span></div>
+      </div>
+
+      <!-- 8 UTS -->
+      <div id="uts8" class="states-grid" style="display:none;">
+        <div class="state-chip ut"><span class="flag">🏙️</span><span class="name">Delhi (NCT)</span></div>
+        <div class="state-chip ut"><span class="flag">🏝️</span><span class="name">Andaman & Nicobar</span></div>
+        <div class="state-chip ut"><span class="flag">🏛️</span><span class="name">Chandigarh</span></div>
+        <div class="state-chip ut"><span class="flag">🏝️</span><span class="name">Dadra & Nagar Haveli</span></div>
+        <div class="state-chip ut"><span class="flag">🏝️</span><span class="name">Daman & Diu</span></div>
+        <div class="state-chip ut"><span class="flag">🏝️</span><span class="name">Lakshadweep</span></div>
+        <div class="state-chip ut"><span class="flag">🏔️</span><span class="name">Ladakh</span></div>
+        <div class="state-chip ut"><span class="flag">🌸</span><span class="name">Jammu & Kashmir</span></div>
+      </div>
+    </section>
+
+    <!-- UPGRADED CONTACT CARD (NO EARLY ACCESS FORM, BEAUTIFUL DESIGN) -->
+    <section class="notify-section" id="notify">
+      <h2>Get in Touch with the LEETINDIA Team ✉️</h2>
+      <p>Have questions about lateral entry admissions, syllabus updates, or premium predictors? Send us a message and
+        our counselor support team will assist you directly.</p>
+      <a href="mailto:btechleet@gmail.com" class="notify-contact-btn">✉️ Message us at btechleet<span class="at-sign">@</span>gmail.com 🚀</a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-left">
+        <strong>LEETINDIA.COM</strong><br>
+        India's Premier AI-Powered LEET Educational SaaS Platform<br>
+        <span style="font-size:12px; color: var(--text-muted);">© 2026 LEETINDIA.COM · Made with 💜 in India</span>
+      </div>
+      <div class="footer-right">
+        <a href="mailto:btechleet@gmail.com" class="footer-link">📧 btechleet<span class="at-sign">@</span>gmail.com</a>
+        <span style="color: var(--border-hover)">|</span>
+        <a href="#features" class="footer-link">🤖 Explore AI Tools</a>
+      </div>
+    </footer>
+
+  </div>
+
+  <script>
+    // COUNTDOWN — Target: August 3, 2026
+    function updateCountdown() {
+      const target = new Date('2026-08-03T00:00:00');
+      const now = new Date();
+      const diff = target - now;
+
+      if (diff <= 0) {
+        document.getElementById('d').textContent = '00';
+        document.getElementById('h').textContent = '00';
+        document.getElementById('m').textContent = '00';
+        document.getElementById('s').textContent = '00';
+        return;
+      }
+
+      const days = Math.floor(diff / 86400000);
+      const hours = Math.floor((diff % 86400000) / 3600000);
+      const mins = Math.floor((diff % 3600000) / 60000);
+      const secs = Math.floor((diff % 60000) / 1000);
+
+      document.getElementById('d').textContent = String(days).padStart(2, '0');
+      document.getElementById('h').textContent = String(hours).padStart(2, '0');
+      document.getElementById('m').textContent = String(mins).padStart(2, '0');
+      document.getElementById('s').textContent = String(secs).padStart(2, '0');
+    }
+    setInterval(updateCountdown, 1000);
+    updateCountdown();
+
+    // COVERAGE TABS
+    function showTab(id, btn) {
+      document.getElementById('states28').style.display = 'none';
+      document.getElementById('uts8').style.display = 'none';
+      document.getElementById(id).style.display = 'grid';
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+    }
+
+    // Dynamic Chip Hover Highlights
+    const chips = document.querySelectorAll('.state-chip');
+    chips.forEach(chip => {
+      chip.addEventListener('mouseenter', () => {
+        const colors = [
+          'rgba(124, 58, 237, 0.08)',
+          'rgba(2, 132, 199, 0.08)',
+          'rgba(219, 39, 119, 0.08)',
+          'rgba(217, 119, 6, 0.06)'
+        ];
+        chip.style.background = colors[Math.floor(Math.random() * colors.length)];
+        chip.style.borderColor = 'var(--accent1)';
+      });
+      chip.addEventListener('mouseleave', () => {
+        chip.style.background = 'var(--bg-card)';
+        chip.style.borderColor = 'var(--border)';
+      });
+    });
+  </script>
+</body>
+
+</html>
